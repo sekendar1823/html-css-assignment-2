@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: dodgerblue;
+  padding: 10px;
+    }
+    .container > div {
+      background-color: #f1f1f1;
+  text-align: center;
+  padding: 20px 0;  
+  font-size: 22px;
+    }
+    .large {
+      grid-column: span 2;
+    }
+
+    .item4 {
+  grid-area: 1 / 1 / span 4 / span 1;
+}
+
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="grid-item large" id="rooms">
+      <img src="images/room-image.png" alt="">Rooms</div>
+    <div class="grid-item" id="dining">
+      <img src="images/dining.png" alt="">Dining</div>
+    <div class="grid-item" id="meetings">
+      <img src="images/meeting.png" alt="">Conferences & Meetings</div>
+    <div class="grid-item" id="facilities"> <img src="images/service.png" alt="">Service & Facilities</div>
+    <div class="grid-item" id="wedding"> <img src="images/wedding.png" alt="">Wedding Package</div>
+  </div>
+</body>
+</html>

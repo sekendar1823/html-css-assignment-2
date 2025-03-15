@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Newsletter</a></li>
+      </ul>
+      <div class="logo">
+        <img src="images/hotel-logo.png" alt="Hotel Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Rooms</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Carousel -->
+  <header class="hero">
+    <div class="carousel">
+      <div class="slide active" style="background-image: url('images/hero-image.png');"></div>
+      <div class="slide" style="background-image: url('images/slide2.jpg');"></div>
+      <div class="slide" style="background-image: url('images/slide3.jpg');"></div>
+
+      <!-- Text Overlay -->
+      <div class="hero-overlay">
+        <h1>Discover Extraordinary <br>Comfort in Hotels</h1>
+      </div>
+
+      <!-- Carousel Dots -->
+      <div class="dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </div>
+  </header>
+
+
+
+ 
+
+<!-- Book a Room Section start -->
+<div class="book-section">
+  <div class="booking-container">
+    <h2>Book a Room</h2>
+    <p>Discover the perfect space for you!</p>
+  
+    <div class="booking-form">
+      <div class="date-selection">
+        <label for="date"><strong>Date</strong></label>
+        <button class="date-btn">
+          <i class="fas fa-calendar-alt"></i> Check Available
+        </button>
+      </div>
+
+      <div class="person-selection">
+        <label for="person"><strong>Person</strong></label>
+        <div class="person-options">
+          <div class="dropdown">
+            <i class="fas fa-user"></i>
+            <span>Adults</span>
+            <select id="adults">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+
+          <div class="dropdown">
+            <i class="fas fa-child"></i>
+            <span>Children</span>
+            <select id="children">
+              <option value="0" selected>0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <button class="book-btn">BOOK NOW</button>
+    </div>
+  </div>
+</div>
+
+<!-- Book a Room Section End -->
+
+
+<!-- Servic Section start -->
+<div class="service-section">
+<div class="grid-container">
+  <div class="grid-item large">
+    <img src="images/room-image.png" alt="Rooms">
+    <div class="overlay">Rooms</div>
+  </div>
+  <div class="grid-item">
+    <img src="images/dining.png" alt="Dining">
+    <div class="overlay">Dining</div>
+  </div>
+  <div class="grid-item">
+    <img src="images/conference.png" alt="Conferences & Meetings"> 
+    <div class="overlay">Conferences & Meetings</div>
+  </div>
+  <div class="grid-item">
+    <img src="images/service.png" alt="Service & Facilities">
+    <div class="overlay">Service & Facilities</div>
+  </div>
+  <div class="grid-item">
+    <img src="images/wedding.png" alt="Wedding Package">
+    <div class="overlay">Wedding Package</div>
+  </div>
+</div>
+</div>
+
+<!-- Service Section end -->
+
+
+<!-- Offers Section Start -->
+
+<div class="offers-container">
+  <section class="offers-section">
+    <h4 class="special-offers">Special Offers</h4>
+    <h1>Best offer of the month</h1>
+    <p>Experience Fantastic Benefits and Obtain Better Rates When You Make a Direct Booking on Our Official Website</p>
+    <a href="#" class="view-all">View all</a>
+
+    <div class="offers-container">
+      <div class="offer-card">
+        <img src="images/honey.png" alt="Honeymoon Room">
+        <div class="offer-details">
+          <p class="category">Room</p>
+          <h2>Honeymoon</h2>
+          <p>Indulge in a Memorable One-Time Romantic Dinner for Two</p>
+          <p class="price">$699 <span>/night</span></p>
+          <p class="people"><i class="fas fa-user"></i> 2</p>
+        </div>
+      </div>
+
+      <div class="offer-card">
+        <img src="images/meeting.png" alt="Meeting Room">
+        <div class="offer-details">
+          <p class="category">Room</p>
+          <h2>Meetings</h2>
+          <p>Experience an Exclusively Private Environment to Boost Your Productivity</p>
+          <p class="price">$999 <span>/night</span></p>
+          <p class="people"><i class="fas fa-user"></i> 30</p>
+        </div>
+      </div>
+
+      <div class="offer-card">
+        <img src="images/romantic.png" alt="Romantic Dining">
+        <div class="offer-details">
+          <p class="category">Dining</p>
+          <h2>Romantic Dining</h2>
+          <p>Indulge in a Memorable One-Time Romantic Dinner for Two</p>
+          <p class="price">$499 <span>/table</span></p>
+          <p class="people"><i class="fas fa-user"></i> 2</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Offers Section end -->
+
+
+<!-- Footer Section Start -->
+<div class="footer-section">
+<footer class="footer">
+  <div class="footer-container">
+    <div class="newsletter">
+      <h2>Newsletter & Special Promo</h2>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email here" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="footer-content">
+      <div class="logo2">
+        <img src="images/hotel-logo.png" alt="Hotel Logo">
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Location</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Term of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Services & Facilities</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">How to book</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© Copyright Booking Hotels. All rights reserved.</p>
+  </div>
+</footer>
+</div>
+
+<!-- Footer Section end -->
+
+
+
+</body>
+
+</html>
